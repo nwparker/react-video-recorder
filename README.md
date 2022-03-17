@@ -21,7 +21,7 @@ import VideoRecorder from 'react-video-recorder'
 
 const App = () => (
   <VideoRecorder
-    onRecordingComplete={videoBlob => {
+    onRecordingComplete={(videoBlob) => {
       // Do something with the video...
       console.log('videoBlob', videoBlob)
     }}
