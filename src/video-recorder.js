@@ -260,7 +260,7 @@ export default class VideoRecorder extends Component {
             deviceId: {
               exact: currentDeviceId
             },
-            ...(this.props.constraints.video || {}),
+            ...(this.props.constraints.video || {})
           }
         }
 
