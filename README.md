@@ -2,6 +2,7 @@
 
 ## Installation
 
+
 ```sh
 yarn add react-video-recorder
 
