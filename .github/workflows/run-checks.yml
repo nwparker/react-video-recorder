@@ -38,15 +38,6 @@ jobs:
       - name: Run commit message linter
         uses: wagoid/commitlint-github-action@v4
 
-      - name: Run linter
-        run: yarn lint
-
-      - name: Run unit tests
-        run: yarn test:unit
-
-      - name: Run browser tests
-        run: yarn test:browser
-
       - name: Semantic Release
         if: contains(github.ref, 'refs/heads/master')
         uses: cycjimmy/semantic-release-action@v2
